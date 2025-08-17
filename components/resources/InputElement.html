@@ -1,0 +1,40 @@
+<h1 class="text-center text-4xl text-white mb-6">Javascript Weather App</h1>
+    
+<!-- input container -->
+<div class="w-full h-full content-container flex flex-col gap-4">
+    <div class="flex flex-row justify-between">
+        <!-- Last searched city -->
+        <div id="last-search-element" class="flex flex-row gap-4 hidden">
+            <p id="last-city-title" class="result my-auto">Last Searched City:</p>
+
+            <button id="last-city"
+                class="bg-blue-500 text-sm text-white py-1 px-2 rounded focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4">
+            </button>
+        </div>
+
+        <!-- Temperature options -->
+        <div class="flex flex-row" id="temp-options">
+            <button onclick="setTempOption()" 
+                id="temp-button"
+                class="bg-blue-500 text-sm text-white py-1 px-2 rounded focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 cursor-pointer">
+                
+            </button>
+        </div>
+    </div>
+
+    <!-- form container -->
+    <div class="container">
+        <!-- error message -->
+        <p aria-live="polite" id="error-message" class="text-red-600 hidden"></p>
+
+        <form id="weather-form">
+            <input type="text" id="city" placeholder="Enter city name" 
+                class="border border-white p-2 rounded w-full mb-4 text-white placeholder-white" required />
+            
+            <button id="city-submit-button" type="submit" 
+                class="bg-blue-500 text-white p-2 rounded w-full focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4">
+                Get Weather
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- imports tailwindcss  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Weather App</title>  
+</head>
+
+<body class="bg-[#100E1C]">
+    <!-- main body -->
+    <div class="flex flex-col items-center justify-evenly min-h-screen">
+
+        <!-- input component -->
+        <input-element id="city-input" class="flex flex-col w-full max-w-md" ></input-element>
+        
+        <!-- weather result container -->
+        <weather-display-element id="weather-result" class="flex flex-col w-full max-w-md hidden"></weather-display-element>
+
+        <div id="memory-element" class="flex flex-col w-full max-w-md hidden">
+            <h1 class="text-center text-4xl text-white mb-6">Your Search Memory</h1>
+
+            <div class="content-container">
+                <ul id="memoryUL" class="list-disc text-white">
+                    
+                </ul>
+            </div>
+        </div>  
+    </div>
+</body>
+
+<!-- javascript -->
+<script type="module" src="javascript/main.js"></script>
+
+<!-- components -->
+<script type="module" src="components/inputElement.js"></script>
+<script type="module" src="components/weatherDisplayElement.js"></script>
+<script type="module" src="components/weatherCard.js"></script>
+</html>

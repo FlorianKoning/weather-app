@@ -1,0 +1,34 @@
+.content-container {
+    width: 100%;
+    max-width: 28rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: #1D213A;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 28rem;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* gelijk aan Tailwind's gap-2 */
+}
+
+.result {
+    color: #fff;
+    line-height: 1;
+}
+
+.button-outline {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #fff;
+    outline-offset: 4px;
+}
